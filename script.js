@@ -1,1 +1,1 @@
-var gender=
+var gender=document.getElementById("gender");
