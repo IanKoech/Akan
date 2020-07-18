@@ -6,6 +6,7 @@ var DD=date.getDate();
 var CC=Math.ceil(year/100);
 var YY=year-((Math.round(year/100)*100));
 var akan;
+var button=document.getElementById("button");
 
 
 function akanDay(MM,CC,DD,){
@@ -16,7 +17,7 @@ function akanDay(MM,CC,DD,){
 var maleNames=["Kwasi","Kwadwo", "Kwabena", "Kwaku", "Yaw", "Koffi", "Kwamw"];
 var femaleNames=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-function getAkanName(){
+button.onclick=function getAkanName(){
     if(gender=="male"){
         return maleNames[akan-1];
     }else if(gender=="female"){

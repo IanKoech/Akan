@@ -23,11 +23,11 @@
             <p></p>
             <input type="date" name="birth-date" id="year" required value="date"
              min="1000-01-01" max="2020-07-31"/>
-            <button type="submit" onclick="getAkanName()">Submit</button>
+            <button type="submit" id="button" onclick="getAkanName()">Submit</button>
             <p></p>
             <label>Your Akan name is :</label>
             <p id="akan"></p>
-            <script >document.getElementById("akan").innerHTML=document.write(getAkanName())</script>
+            <script src="./script.js">document.getElementById("akan").innerHTML=getAkanName()</script>
         </form>
     </body>
 </html>
