@@ -39,20 +39,33 @@
             </div>
         </div>
         <form id="form" action="" method="GET"> 
-            <label for="gender">Select your gender</label>
+            <div>
+                <label for="gender">Select your gender:</label>
+                Male:<input type="radio" id="gender" name="gender" value="male">
+                Female:<input type="radio" id="gender" name="gender" value="female">
+            </div>
             <p></p>
-            Male:<input type="radio" id="gender" name="gender" value="male"/>
-            Female:<input type="radio" id="gender" name="gender" value="female"/>
+            <div>
+                <label for="century">Enter the century you were born:</label>
+                <input type="number" required min="1" max="21" id="century">
+            </div>
             <p></p>
-            <label for="year">Enter your date of birth:</label>
+            <div>
+                <label for="month">Enter your birth month:</label>
+                <input type="number" required id="month">
+            </div>
             <p></p>
-            <input type="date" name="birth-date" id="year" required placeholder="mm/dd/yyyy" value="date"
-             min="1000-01-01" max="2020-07-31"/>
-            <button type="submit" id="button" onclick="getAkanName()">Submit</button>
+            <div>
+                <label for="year">Enter the year you were born</label>
+                <input type="number" required id="year">
+            </div>
             <p></p>
-            <label>Your Akan name is :</label>
-            <p id="akan"></p>
-            <script src="./script.js">document.getElementById("akan").innerHTML=getAkanName()</script>
+            <div>
+                <label for="day">Enter the date of birth:</label>
+                <input type="number" required id="day">
+            </div>
+            <p></p>
+            <button type="submit" name="Submit" >Submit</button>
         </form>
     </body>
 </html>
