@@ -2,11 +2,12 @@ var century=parseInt(document.getElementById("century"));
 var year=parseInt(document.getElementById("year"));
 var dayOfMonth=parseInt(document.getElementById("day"));
 var month=parseInt(document.getElementById("month"));
-var day;
+
 var gender=document.getElementsByName("gender");
 var maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 var femaleNames=["Akosua", "Adwoa","Abenaa","Akua", "Yaa","Afua","Ama"];
 
+//Tests whether user entered the century
 function checkCentury(){
     if(century==""){
         return "Please enter the century you were born in!"
@@ -37,7 +38,7 @@ function checkCentury(){
  function getAkanName(){
  switch(gender){
     case gender = "male":
-          switch(day){
+          switch(akanD){
             case (0 || -0):
               document.getElementById("result").innerHTML = "Born on a Sunday. Your akan name is " + maleNames[0];
             break;
@@ -64,7 +65,7 @@ function checkCentury(){
           }
     break;
     case gender = "female":
-            switch(day){
+            switch(akanD){
               case 0 || -0:
                 document.getElementById("result").innerHTML = "Born on a Sunday. Your akan name is "+femaleNames[0];
               break;
