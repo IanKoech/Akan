@@ -9,12 +9,14 @@
     </head>
 
     <body>
-        <div id="error">
+        <div>
             <p class="jumbotron">Welcome ,this page requires an input, 
                 our birthday and calcultes the day of the week you were born 
                 then returns to you an Akan name depending on your gender.
             </p>
-            <p>Here are some of the Ghaninian Akan name for males</p>
+            <div class="container">
+                <div class="row">
+            <p class="col-md-6">Here are some of the Ghaninian Akan name for males</p>
             <ul>
                 <li>Sunday: Kwasi</li>
                 <li>Monday: Kwadwo</li>
@@ -23,7 +25,7 @@
                 <li>Friday: Kofi</li>
                 <li>Saturday: Kwame</li>
             </ul>
-            <p>Female Akan names</p>
+            <p class="col-md-6">Female Akan names</p>
             <ul>
                 <li>Sunday: Akosua</li>
                 <li>Monday: Adwoa</li>
@@ -33,6 +35,8 @@
                 <li>Friday: Afua</li>
                 <li>Saturday: Ama</li>
             </ul>
+            </div>
+            </div>
         </div>
         <form id="form" action="" method="GET"> 
             <label for="gender">Select your gender</label>
@@ -42,7 +46,7 @@
             <p></p>
             <label for="year">Enter your date of birth:</label>
             <p></p>
-            <input type="date" name="birth-date" id="year" required value="date"
+            <input type="date" name="birth-date" id="year" required placeholder="mm/dd/yyyy" value="date"
              min="1000-01-01" max="2020-07-31"/>
             <button type="submit" id="button" onclick="getAkanName()">Submit</button>
             <p></p>
