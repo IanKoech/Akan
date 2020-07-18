@@ -1,20 +1,11 @@
 var gender=document.getElementById("gender");
-var year=document.getElementById("year");
-var form=document.getElementById("form");
-var error=document.getElementById("error");
-var  day;
-
-form.addEventListener("submit",(e)=>{
-    let message=[];
-    if(year.value>2020 && year.value<999){
-        message.push("Enter the appropriate year.");
-    }
-    if(message.length>0){
-        e.preventDefault();
-        error.innerText=message.join(" ,");
-    }
-});
-
-function dayOfWeek(year){
-
-}
+var date=document.getElementById("year");
+var month=date.getMonth();
+var date=date.getDate();
+var year=date.getYear();
+var day;
+ function getDay(){
+     day=( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
+     return day;
+ }
+ document.getElementById("akan").innerHTML=getDay;
