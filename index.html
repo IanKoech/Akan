@@ -10,12 +10,17 @@
 
     <body>
         <div class="container">
+          <div class="row">
             <div class="jumbotron">
                 <p>Welcome ,this page requires an input, 
                 our birthday and calcultes the day of the week you were born 
                 then returns to you an Akan name depending on your gender.
                 </p>
             </div>
+            <div class="col-md-4">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAkFBMVEXOESYAaz/80RYAAADKACcAYUH/2hX/1xFpVwn/1Bb/1hf/0xb5zxbatRPfuRPHpRF2Ygp9aAuCbAvTrxL/3xXOqxKJcgyUew0uJgRaSwhqWAllUwkfGgPCoRHvxhWZfw20lQ9TRQehhQ4OCwHxyBWxmw0lHgMZFQE8MgU2LARJPAYVEgHmvxQpIgO5lQgAZ0IwSVoeAAADmUlEQVR4nO3a2VLiQBSAYcae6ZAOiyBugCuO6Ij6/m83AmEJhwSktM+p8v8uLS/CXzlZOl2rAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfNJvKwwdiTei97enfQgLtSMjGq6hfQgLVpqkbddOtQ8iZ6VJcuyOE+2DyFlpEpxzQfsgckaafIyOMzM8RpoknY8mHSPDY6TJdHTMDI+NJunprMmpjeGx0STpzpp0bQyPjSbZcNZkmGkfyIyJJumJmzsxMTwmmoSzvMmZiausjSaPeZNHmuTSpltoWriiWGgSzpdNzi2cKBaa+PGyydhrH8yRiSZZy620DAyPgSZro2NjeAw08RdrTS4MDI9+k8LomBge/SbhptDkRn944jXJku38U6HJky/5v3jnT7QmWfNyUN+iP3BFg/62fxtcxnuci3eehNbQHW7YijdTEa8naegcnKQTIr4xR73G+qsDk1xFvUPHve+E638HFLm7jnsvinwvzjbuvPu4CZEfWaI/n/jmeHeGNeNm9Cfb+M9sodH/RJJ+I/4znMJzbOZv905yq/H6o/JsHybPexV5nqg86Ou876TLVekqZ7Evrjmtd0Df3pmkrbVsoPZeHB7uKovcPai9IOutFWT+viLJvddbR9FcP/HNUUmRUUvzy7HumlLpaaK62KbZJJS/El5prrapzk69tEldc6las0mj4hqruVlWsUnF6OgOj2ITX/Uu2FccHsUmVaOjOjx6TdLqp3vFzbJ6TZLjYoSNVUnFneaKs7NxUe1tXHL1DkytSb4ldnGSXIfNBWy9zbJqTZL1jz3zZejiAnb3570X+9WvHy2Xof3JaPVntbuxVpO10amvLUOHxup5X214tJqE7uKn3xZ2DGTJcgFbbXjUmrzMf/iFWIYOk3zf0ssPa7LYTd7d8m08XZxDWjvNlZrk6/Yly9D5ArbWTnOt8+TVVS1DzxewX3/UeTLbTX5fsR0rS6YL2Eo7zXWahHM33PFtfPqtXWmzrFIT1z/a9Xun39qVmpTsMvxWfvLW2+O/em+Tsk2Q36r2R8P7+1f+21er/cImmkg0kWgi0USiiUQTiSYSTSSaSDSRaCLRRKKJRBOJJhJNJJpINJFoItFEoolEE4kmEk0kmkg0kWgi0USiiUQTiSYSTSSaSDSRaCLRRKKJRBOJJhJNJJpINJFoItFEoolEE4kmEk0kmkg0kWgi0USiiUQTiSYSTSSaSDSRaCL9B+UY8eCmZg7bAAAAAElFTkSuQmCC" alt="Ghaninian flag">
+            </div>
+          </div>
             <div class="container">
                 <div class="row">
             <p class="col-md-6" id="list">Here are some of the Ghaninian Akan name for males</p>
@@ -39,39 +44,40 @@
             </ul>
             </div>
             </div>
-        </div>
+       
         <form id="form" action="" method="GET"> 
 
-            <div class="labels">
+            <div id="labels" class="col-md-6">
                 <label for="gender" >Select your gender:</label>
                 Male:<input type="radio" id="gender" name="gender" value="male">
                 Female:<input type="radio" id="gender" name="gender" value="female">
             </div>
             <p></p>
-            <div>
+            <div id="labels" class="col-md-6">
                 <label for="century">Enter the century you were born:</label>
                 <input type="number" required min="1" max="21" id="century">
             </div>
             <p></p>
-            <div>
+            <div id="labels" class="col-md-6">
                 <label for="month">Enter your birth month:</label>
                 <input type="number" required id="month">
             </div>
             <p></p>
-            <div>
+            <div id="labels" class="col-md-6">
                 <label for="year">Enter the year you were born</label>
                 <input type="number" required id="year">
             </div>
             <p></p>
-            <div>
+            <div id="labels" class="col-md-6">
                 <label for="day">Enter the date of birth:</label>
                 <input type="number" required id="day">
             </div>
             <p></p>
             <button type="submit" name="Submit" onclick="getAkanName()">Submit</button>
             <h2 id="result"></h2>
-            
+
         </form>
+        </div>
         <script src="./script.js"></script>
     </body>
 </html>
