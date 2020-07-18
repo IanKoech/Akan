@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <title>Akan Name</title>
         <link href="./style.css">
-        <script src="./script.js"></script>
+        
     </head>
 
     <body>
@@ -13,7 +13,7 @@
             your birthday and calcultes the day of the week you were born 
             then returns to you an Akan name depending on your gender.
         </p>
-        <form id="form"  method="GET"> 
+        <form id="form" action="" method="GET"> 
             <label for="gender">Select your gender</label>
             <p></p>
             Male:<input type="radio" id="gender" name="gender" value="male"/>
@@ -23,11 +23,11 @@
             <p></p>
             <input type="date" name="birth-date" id="year" required value="date"
              min="1000-01-01" max="2020-07-31"/>
-            <button type="submit" onclick="getAkan()">Submit</button>
+            <button type="submit" onclick="getAkanName()">Submit</button>
             <p></p>
-            <label>Your Akan name is</label>
-            <p></p>
-            <output id="akan" type="text" result="name"></output>
+            <label>Your Akan name is :</label>
+            <p id="akan"></p>
+            <script >document.getElementById("akan").innerHTML=document.write(getAkanName())</script>
         </form>
     </body>
 </html>
