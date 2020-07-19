@@ -34,8 +34,9 @@ function checkCentury(){
      }else{
          return "Try again!";
      }
+     getAkanName(gender);
  }
- function getAkanName(){
+ function getAkanName(gender){
  switch(gender){
     case gender = "male":
           switch(akanD){
