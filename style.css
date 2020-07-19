@@ -19,3 +19,6 @@ body{
 #labels{
     font-family: fantasy;
 }
+.card{
+    background-color: lightblue;
+}
