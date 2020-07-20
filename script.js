@@ -59,25 +59,25 @@ function getAkanName(){
     switch(gender){
         case gender = "male":
               switch(day){
-                case (0 || -0):
+                case (0):
                   document.getElementById("result").innerHTML = "Sunday : " + maleNames[0];
                 break;
-                case (1 || -1):
+                case (1):
                   document.getElementById("result").innerHTML = "Monday: " + maleNames[1];
                 break;
-                case (2 || -2):
+                case (2):
                   document.getElementById("result").innerHTML = "Tuesday " + maleNames[2];
                 break;
-                case (3 || -3):
+                case (3):
                   document.getElementById("result").innerHTML = "Wednesday "+ maleNames[3];
                 break;
-                case (4 || -4):
+                case (4):
                   document.getElementById("result").innerHTML = "Thursday: " + maleNames[4];
                 break;
-                case (5 || -5):
+                case (5):
                   document.getElementById("result").innerHTML = "Friday: " + maleNames[5];
                 break;
-                case (6 || -6):
+                case (6):
                   document.getElementById("result").innerHTML = "Saturday: " + maleNames[6];
                 break;
                 default:
@@ -86,25 +86,25 @@ function getAkanName(){
         break;
         case gender = "female":
                 switch(day){
-                  case 0 || -0:
+                  case (0):
                     document.getElementById("result").innerHTML = "Sunday: "+femaleNames[0];
                   break;
-                  case 1 || -1:
+                  case (1):
                     document.getElementById("result").innerHTML = "Monday: "+femaleNames[1];
                   break;
-                  case 2 || -2:
+                  case (2):
                     document.getElementById("result").innerHTML = "Tuesday: "+femaleNames[2];
                   break;
-                  case 3 || -3:
+                  case (3):
                     document.getElementById("result").innerHTML = "Wednesday: "+femaleNames[3];
                   break;
-                  case 4 || -4:
+                  case (4):
                     document.getElementById("result").innerHTML = "Thursday: "+femaleNames[4];
                   break;
-                  case 5 || -5:
+                  case (5):
                     document.getElementById("result").innerHTML = "Friday: "+femaleNames[5];
                   break;
-                  case 6 || -6:
+                  case (6):
                     document.getElementById("result").innerHTML = "Saturday: "+femaleNames[6];
                   break;
 
