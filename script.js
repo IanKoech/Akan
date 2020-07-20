@@ -1,5 +1,10 @@
-var century, year, month, date, akanDay, day;
-//Get input
+var century;
+var year;
+var month;
+var date;
+var akanDay;
+var day;
+
 function getInput(){
   century = parseInt(document.getElementById("century").value);
   year = parseInt(document.getElementById("year").value);
